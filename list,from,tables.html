@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- unorder list
+    type = circle/square/desc -->
+    <ul type="circle">
+      <li>Home</li>
+      <li>About</li>
+      <li>servies</li>
+      <li>contact</li>
+    </ul>
+
+    <ol type="1">
+      <li>Home</li>
+      <li>About</li>
+      <li>servies</li>
+      <li>contact</li>
+    </ol>
+
+    <!-- tables tr => table's row th => table's head td => table's data  -->
+    <div>
+      <table>
+        <thead>
+          <caption>
+            Max score
+          </caption>
+          <tr>
+            <th>S.NO</th>
+            <th>Player Name</th>
+            <th>Max score</th>
+            <th>Game</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Meer</td>
+            <td>99</td>
+            <td>circket</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>shahjahan</td>
+            <td>88</td>
+            <td>circket</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>sagar</td>
+            <td>70</td>
+            <td>circket</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- form in HTML  -->
+    <hr />
+    <h3>traveling form</h3>
+    <div>
+      <form action="form.php">
+        <input type="text" placeholder="enter your name" />
+
+        <!-- radio buttons at a time one select name must be same id must be different -->
+        <label for="sectionida">
+            <input type="radio" value="section a" name="section" id="sectionida">section A
+
+        </label>
+        <label for="sectionidb">
+            <input type="radio" value="section b" name="section" id="sectionidb">section B
+
+        </label>
+
+        <!-- check box -->
+
+        <input type="checkbox" id="foodcanteen" class="red" name="canteen">
+        <label for="foodcanteen">want to eat food </label>
+        <br>
+        <br>
+        <!-- textarea use for writing text  -->
+        <textarea name="explain" id="explain" cols="30" rows="10" placeholder="Explain why you want to join"></textarea>
+        <!-- select tag use for giving options to user -->
+        <select name="car" id="car">
+
+            <option value="no-car">select your car</option>
+            <option value="civic">civic</option>
+            <option value="Range Rover">Range Rover</option>
+            <option value="Mehran">Mehran</option>
+
+        </select>
+
+      </form>
+    </div>
+  </body>
+</html>
